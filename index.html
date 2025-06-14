@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="search">
+        <input
+          type="text"
+          name="input-search"
+          id="input-search"
+          placeholder="Type a City"
+        />
+        <button type="button" class="btn-search">Search</button>
+      </div>
+      <div class="primary-info">
+        <h1 class="city"></h1>
+
+        <p class="temperature" id="temperature"></p>
+
+        <img
+          src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+          alt="Weather condition icon"
+          id="icon-condition"
+        />
+
+        <p class="condition" id="condition"></p>
+      </div>
+      <div class="secondary-info">
+        <div class="humidity">
+          <span>Humidity</span>
+          <span id="humidity">--</span>
+        </div>
+        <div class="wind-speed">
+          <span>Wind Speed</span>
+          <span id="wind-speed">--</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
