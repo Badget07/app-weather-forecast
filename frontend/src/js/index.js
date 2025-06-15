@@ -1,5 +1,3 @@
-const apiKey = "";
-
 const searchButton = document.querySelector(".btn-search");
 
 searchButton.addEventListener("click", async () => {
@@ -14,11 +12,9 @@ searchButton.addEventListener("click", async () => {
 });
 
 async function searchCityData(city) {
-  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+  const apiUrl = `http://localhost:3000/api/weather?city=${city}`;
 
   const response = await fetch(apiUrl);
-  console.log(response);
-
   if (response.status !== 200) return;
 
   const data = response.json();
