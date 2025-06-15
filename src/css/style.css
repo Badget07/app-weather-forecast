@@ -1,0 +1,76 @@
+body {
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1f2949;
+  color: #ffffff;
+  max-width: 33rem;
+  text-align: center;
+  background-image: url();
+  background-size: cover;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1rem 5rem;
+}
+
+.search {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search input {
+  background-color: #0a1435;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.search .btn-search {
+  background-color: #0a1435;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.primary-info {
+  margin: 3rem;
+}
+
+.primary-info .temperature {
+  background-color: red;
+  font-size: 6.8rem;
+  margin: 2rem 0;
+}
+
+.primary-info .condition {
+  font-size: 2rem;
+}
+
+.secondary-info {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.secondary-info .humidity,
+.secondary-info .wind-speed {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
